@@ -1,0 +1,5 @@
+LinkedListImplementaion/.vs/*
+**/bin/**/*
+**/obj/**/*
+**/packages/**/*
+**/Testresults/**/*
