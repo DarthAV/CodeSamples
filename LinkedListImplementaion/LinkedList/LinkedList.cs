@@ -15,7 +15,7 @@ namespace LinkedListNamespace
         private Node<T> currentNode;
         public void printAllNodes()
         {
-            Node<T> current = head;
+            Node<T> current = this.head;
             while (current != null)
             {
                 Console.WriteLine(current.data);
@@ -51,7 +51,7 @@ namespace LinkedListNamespace
         public void Delete(T objectForDeleting)
         {
             Node<T> previousNode = null;
-            Node<T> currentNode = head;
+            Node<T> currentNode = this.head;
 
             while (currentNode != null)
             {
@@ -74,9 +74,9 @@ namespace LinkedListNamespace
                     {
                         previousNode.next = currentNode.next;
 
-                        if (currentNode == tail)
+                        if (currentNode == this.tail)
                         {
-                            previousNode = tail;
+                            previousNode = this.tail;
                         }
                     }
 
